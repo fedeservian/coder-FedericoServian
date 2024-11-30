@@ -17,3 +17,8 @@ def index(request):
      context = {"año": 2024}
      return render(request, "core/index.html", context)
 
+
+def ejercicio1(request):
+     nombre = 'Federico'
+     apellido = 'Servian'
+     return render(request, "core/Ejercicio1.html", {'nombre': nombre, 'apellido': apellido})
