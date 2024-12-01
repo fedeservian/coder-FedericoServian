@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 from core import views
-
+from cliente.views import ver_cliente
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("saludar/", views.saludar),
@@ -28,4 +28,5 @@ urlpatterns = [
     path('ejercicio1/', views.ejercicio1),
     path('ver-notas/', views.ver_notas),
     path('ver-usuarios/', views.ver_usuarios),
+    path('clientes/', ver_cliente)
 ]
